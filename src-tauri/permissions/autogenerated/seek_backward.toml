@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-seek-backward"
+description = "Enables the seek_backward command without any pre-configured scope."
+commands.allow = ["seek_backward"]
+
+[[permission]]
+identifier = "deny-seek-backward"
+description = "Denies the seek_backward command without any pre-configured scope."
+commands.deny = ["seek_backward"]

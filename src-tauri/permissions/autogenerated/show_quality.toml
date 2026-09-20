@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-show-quality"
+description = "Enables the show_quality command without any pre-configured scope."
+commands.allow = ["show_quality"]
+
+[[permission]]
+identifier = "deny-show-quality"
+description = "Denies the show_quality command without any pre-configured scope."
+commands.deny = ["show_quality"]

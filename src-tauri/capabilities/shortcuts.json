@@ -1,0 +1,11 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "shortcuts-capability",
+  "description": "The bundled shortcut editor may only read state and save the three configurable hotkeys.",
+  "local": true,
+  "webviews": ["shortcut-settings"],
+  "permissions": [
+    "allow-get-overlay-state",
+    "allow-set-hotkeys"
+  ]
+}

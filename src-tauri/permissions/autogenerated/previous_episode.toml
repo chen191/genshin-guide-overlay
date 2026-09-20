@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-previous-episode"
+description = "Enables the previous_episode command without any pre-configured scope."
+commands.allow = ["previous_episode"]
+
+[[permission]]
+identifier = "deny-previous-episode"
+description = "Denies the previous_episode command without any pre-configured scope."
+commands.deny = ["previous_episode"]

@@ -1,0 +1,30 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "controls-capability",
+  "description": "Only the bundled controls webview may call local overlay commands.",
+  "local": true,
+  "webviews": ["controls"],
+  "permissions": [
+    "core:event:allow-listen",
+    "core:event:allow-unlisten",
+    "core:window:allow-start-dragging",
+    "core:window:allow-start-resize-dragging",
+    "allow-get-overlay-state",
+    "allow-navigate-content",
+    "allow-previous-episode",
+    "allow-next-episode",
+    "allow-return-to-search",
+    "allow-content-reload",
+    "allow-toggle-media",
+    "allow-seek-backward",
+    "allow-seek-forward",
+    "allow-show-quality",
+    "allow-set-playback-rate",
+    "allow-toggle-click-through",
+    "allow-set-opacity",
+    "allow-set-content-zoom",
+    "allow-open-shortcut-settings",
+    "allow-set-hotkeys",
+    "allow-hide-overlay"
+  ]
+}

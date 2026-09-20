@@ -1,0 +1,15 @@
+/node_modules/
+/src-tauri/target/
+/src-tauri/gen/
+/dist/
+/runtime-*.png
+.env
+.env.*
+*.log
+*.pdb
+*.exe
+*.msi
+*.zip
+*.7z
+settings.json
+/.codex-temp/

@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-seek-forward"
+description = "Enables the seek_forward command without any pre-configured scope."
+commands.allow = ["seek_forward"]
+
+[[permission]]
+identifier = "deny-seek-forward"
+description = "Denies the seek_forward command without any pre-configured scope."
+commands.deny = ["seek_forward"]

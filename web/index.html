@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>攻略悬浮窗控制条</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="toolbar" aria-label="攻略悬浮窗控制条">
+      <button id="drag" class="icon drag" title="拖动窗口" aria-label="拖动窗口">⠿</button>
+      <button id="reload" class="icon optional" title="重新加载" aria-label="重新加载">↻</button>
+      <button id="back-search" class="text-button search-back" title="返回搜索结果" aria-label="返回搜索结果" hidden>←搜</button>
+      <input id="url" type="text" spellcheck="false" autocomplete="off"
+        placeholder="搜索B站攻略 / 输入BV号 / 粘贴网址" aria-label="搜索攻略或打开网址"
+        title="输入后按 Enter 搜索或打开" />
+      <button id="open" class="icon search-button" title="搜索关键词或打开网址" aria-label="搜索关键词或打开网址">
+        <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+          <circle cx="8.5" cy="8.5" r="5.25"></circle>
+          <path d="m12.4 12.4 4.1 4.1"></path>
+        </svg>
+      </button>
+      <button id="quality" class="text-button quality-button" title="画质：默认请求当前可用最高档" hidden>画质</button>
+      <select id="speed" class="speed-select" title="播放倍速" aria-label="播放倍速" hidden>
+        <option value="0.5">0.5×</option>
+        <option value="0.75">0.75×</option>
+        <option value="1" selected>1×</option>
+        <option value="1.25">1.25×</option>
+        <option value="1.5">1.5×</option>
+        <option value="2">2×</option>
+      </select>
+      <button id="zoom" class="text-button zoom-button" title="切换攻略页缩放">40%</button>
+      <button id="seek-back" class="text-button seek-button" title="快退 10 秒" aria-label="快退 10 秒" hidden>−10</button>
+      <button id="play" class="text-button play-button" title="暂停/继续" aria-label="暂停或继续播放">⏯</button>
+      <button id="seek-forward" class="text-button seek-button" title="快进 10 秒" aria-label="快进 10 秒" hidden>+10</button>
+      <button id="previous-episode" class="text-button episode-button" title="上一集（仅同视频分集或 B 站合集）" aria-label="上一集" hidden>上一集</button>
+      <button id="next-episode" class="text-button episode-button" title="下一集（仅同视频分集或 B 站合集）" aria-label="下一集" hidden>下一集</button>
+      <button id="shortcuts" class="text-button shortcut-button" title="修改快捷键">按键</button>
+      <label class="opacity optional" title="窗口透明度">
+        <span>◐</span>
+        <input id="opacity" type="range" min="55" max="100" step="5" value="90" />
+      </label>
+      <button id="lock" class="text-button" title="Ctrl+Alt+L 锁定/解锁鼠标穿透">锁定</button>
+      <button id="hide" class="icon" title="隐藏到托盘（Ctrl+Alt+O 恢复）" aria-label="隐藏到托盘">—</button>
+      <button id="resize" class="resize" title="拖动调整大小" aria-label="调整窗口大小">⌟</button>
+    </main>
+
+    <output id="status" role="status" aria-live="polite"></output>
+  </body>
+</html>

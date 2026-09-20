@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>快捷键设置</title>
+    <link rel="stylesheet" href="shortcuts.css" />
+    <script src="shortcuts.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>快捷键设置</h1>
+      <label><span>播放 / 暂停</span><input id="play" class="hotkey-input" type="text" readonly inputmode="none" autocomplete="off" spellcheck="false" aria-label="录制播放暂停快捷键" /></label>
+      <label><span>快退 10 秒</span><input id="seek-backward" class="hotkey-input" type="text" readonly inputmode="none" autocomplete="off" spellcheck="false" aria-label="录制快退快捷键" /></label>
+      <label><span>快进 10 秒</span><input id="seek-forward" class="hotkey-input" type="text" readonly inputmode="none" autocomplete="off" spellcheck="false" aria-label="录制快进快捷键" /></label>
+      <label><span>显示 / 隐藏</span><input id="visibility" class="hotkey-input" type="text" readonly inputmode="none" autocomplete="off" spellcheck="false" aria-label="录制显示隐藏快捷键" /></label>
+      <label><span>锁定 / 解锁</span><input id="lock" class="hotkey-input" type="text" readonly inputmode="none" autocomplete="off" spellcheck="false" aria-label="录制锁定解锁快捷键" /></label>
+      <div class="footer">
+        <output id="status" role="status" aria-live="polite"></output>
+        <button id="save">保存</button>
+      </div>
+    </main>
+  </body>
+</html>

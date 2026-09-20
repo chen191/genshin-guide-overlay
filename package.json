@@ -1,0 +1,15 @@
+{
+  "name": "genshin-guide-overlay",
+  "private": true,
+  "version": "0.1.10",
+  "scripts": {
+    "check:web": "node --check web/app.js && node --check web/search.js && node --check web/shortcuts.js",
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "npm run check:web && tauri build",
+    "build:portable": "npm run check:web && tauri build --no-bundle"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.11.4"
+  }
+}
